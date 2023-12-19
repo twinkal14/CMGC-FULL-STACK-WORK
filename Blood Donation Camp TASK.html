@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLOOD DONATION CAMP</title>
+</head>
+<body>
+    <h3>BLOOD DONATION REQURIEMENT :</h3>
+    <script>
+         
+        var age=55
+        var weight_female=45 , weight_male=50
+        var disease="sugar"
+        if(age>=18){
+            
+            if(weight_male>=60)
+            {
+               
+                if(disease!="sugar"){
+                    document.write("<br>for male :Donating blood is a great way of helping others");
+                }
+                else{
+                    document.write("<br> You can't donate the blood to others");
+                }
+            }
+            else if(weight_female>=45)
+            {
+                if(disease!="sugar"){
+                    document.write("<br>for female :Donating blood is a great way of helping others");
+                }
+                else{
+                    document.write("<br> You can't donate the blood to others");
+                }
+                
+            }
+        }
+        else{
+            document.write("<br> You are under age");
+        }
+    </script>
+</body>
+</html>
