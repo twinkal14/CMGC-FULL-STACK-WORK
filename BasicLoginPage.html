@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN PAGE</title>
+</head>
+<body>
+    <center>
+        <form style="background-color: darkcyan;margin-top: 10%;margin-left: 35%;margin-right: 35%;margin-bottom: 5%;border: solid black 2px;border-radius: 85px 0 85px 0;"
+                    onsubmit="return call_value()">
+            <h1 style="font-style: oblique;color: aliceblue;" >sign in</h1>
+            <label for="email"></label>
+            <input type="text" id="email" placeholder="Username" ><br><br>
+            <!-- <input type="text" id="email2" placeholder="Username2" ><br><br> -->
+            <label for="pass"></label>
+            <input type="password" id="psd" placeholder="Password"><br><br>
+            <h5 style="font-style: oblique;font-size: medium;">Remember me</h5><h5 style="font-style: oblique;font-size: medium;">Forgot password</h5>
+            <button  style="font-style: oblique;" >LOGIN</button><br><br><br> 
+            <!-- <input type="button" onclick="call_value()" value="btn">  -->
+            <h4 style="font-style: oblique;color: aliceblue;">Don't have an account? Register here. </h4><br><br>
+        </form>
+    </center>
+
+    <style>
+        body{
+            background-color: rgb(59, 210, 188);
+            background-image: url('/bgimg.jpg');
+            
+        }
+        /*input{
+            color: aliceblue;
+        }*/
+        button{
+            padding: 15px;
+            background-color: black;
+            color: #24d2b5;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            font-size: large;
+            font-family: Arial, Helvetica, sans-serif;
+            width: 150px;
+            
+        }
+        button:hover {
+            font-size: large;
+            width: 200px;
+        }
+        input{
+            padding: 3px;
+            font-size: medium;
+            border-radius: 25px;
+            border: solid black;
+            background-color: rgb(42, 179, 179);
+            
+        }
+    </style>
+
+    <script>
+        function call_value(){
+            var call1=document.getElementById("email").value;
+            document.write(call1)
+
+            var call2=document.getElementById("psd").value;
+            document.write(call2)
+            return false;
+        }
+    </script>
+    
+</body>
+</html>
